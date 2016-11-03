@@ -20,7 +20,7 @@ public class ImmutableLinkedList implements ImmutableList {
 
         Node addNext(Object d) {
             this.nextElem = new Node(d);
-            return nextElem;
+            return this.nextElem;
         }
 
         boolean hasNext() {
@@ -33,7 +33,7 @@ public class ImmutableLinkedList implements ImmutableList {
 
 
         Node getNext() {
-            return nextElem;
+            return this.nextElem;
         }
 
     }
@@ -42,7 +42,6 @@ public class ImmutableLinkedList implements ImmutableList {
     //
 
     public ImmutableLinkedList() {
-
     }
 
     // private constructor for add(Object e)
@@ -54,7 +53,10 @@ public class ImmutableLinkedList implements ImmutableList {
         if (prevListHead != null) {
             this.head = new Node(prevListHead.getData());
             Node tail = this.head;
-            copyList(tail, prevListHead);
+//            if (!prevListHead.hasNext()) {
+//                tail = tail.getNext();
+//            }
+            tail = copyList(tail, prevListHead);
             tail.addNext(object);
         } else {
             this.head = new Node(object);
@@ -67,21 +69,32 @@ public class ImmutableLinkedList implements ImmutableList {
 
         this.listLength = prevListLength + 1;
 
-        this.head = new Node(prevListHead.getData());
-        Node tail = this.head;
-        for (int i = 0; i < index; i++) {
+        Node tail;
+        if (index == 0) {
+            this.head = new Node(object);
+            tail = this.head;
+//            tail = tail.addNext(prevListHead.getData());
+        } else {
+            this.head = new Node(prevListHead.getData());
+            tail = this.head;
             prevListHead = prevListHead.getNext();
-            tail = tail.addNext(prevListHead.getData());
         }
-        tail = tail.addNext(object);
-        copyList(tail, prevListHead);
+        for (int i = 1; i < this.listLength; i++) {
+            if (i == index) {
+                tail = tail.addNext(object);
+            } else {
+                tail = tail.addNext(prevListHead.getData());
+                prevListHead = prevListHead.getNext();
+
+            }
+        }
     }
 
-    // private constructor for add(Object e)
+    // private constructor for addAll(Object[] e)
     private ImmutableLinkedList(Node prevListHead, Object[] objects, int prevListLength) {
         super();
 
-        this.listLength = prevListLength + 1;
+        this.listLength = prevListLength + objects.length;
 
         Node tail;
 
@@ -95,7 +108,7 @@ public class ImmutableLinkedList implements ImmutableList {
             tail = this.head;
         }
         for (int i = 1; i < objects.length; i++) {
-            tail.addNext(objects[i]);
+            tail = tail.addNext(objects[i]);
         }
     }
 
@@ -103,16 +116,26 @@ public class ImmutableLinkedList implements ImmutableList {
     private ImmutableLinkedList(Node prevListHead, int index, Object[] objects, int prevListLength) {
         super();
 
-        this.listLength = prevListLength + 1;
+        this.listLength = prevListLength + objects.length;
 
-        this.head = new Node(prevListHead.getData());
-        Node tail = this.head;
-        for (int i = 0; i < index; i++) {
-            prevListHead = prevListHead.getNext();
+        Node tail;
+        if (index == 0) {
+            this.head = new Node(objects[0]);
+            tail = this.head;
+            for (int i = 1; i < objects.length; i++) {
+                tail = tail.addNext(objects[i]);
+            }
             tail = tail.addNext(prevListHead.getData());
-        }
-        for (int i = 0; i < objects.length; i++) {
-            tail = tail.addNext(objects[i]);
+        } else {
+            this.head = new Node(prevListHead.getData());
+            tail = this.head;
+            for (int i = 1; i < index; i++) {
+                prevListHead = prevListHead.getNext();
+                tail = tail.addNext(prevListHead.getData());
+            }
+            for (int i = 0; i < objects.length; i++) {
+                tail = tail.addNext(objects[i]);
+            }
         }
         copyList(tail, prevListHead);
     }
@@ -121,7 +144,7 @@ public class ImmutableLinkedList implements ImmutableList {
     private ImmutableLinkedList(Node prevListHead, int index, int prevListLength) {
         super();
 
-        this.listLength = prevListLength + 1;
+        this.listLength = prevListLength - 1;
 
         Node tail;
         if (index != 0) {
@@ -138,28 +161,30 @@ public class ImmutableLinkedList implements ImmutableList {
         } else {
             this.head = new Node(prevListHead.getNext().getData());
             tail = this.head;
+            prevListHead = prevListHead.getNext();
             copyList(tail, prevListHead);
         }
 
     }
 
     // called from private constructor
-    private void copyList(Node tail, Node prevListHead) {
+    private Node copyList(Node tail, Node prevListHead) {
         while (prevListHead.hasNext()) {
             prevListHead = prevListHead.getNext();
             tail = tail.addNext(prevListHead.getData());
         }
+        return tail;
     }
 
     @Override
-    public ImmutableList add(Object e) {
+    public ImmutableLinkedList add(Object e) {
         return new ImmutableLinkedList(head, e, listLength); // call private constructor from the zero level
     }
 
     @Override
-    public ImmutableList add(int index, Object e) {
+    public ImmutableLinkedList add(int index, Object e) {
         try {
-            if (index >= listLength) {
+            if (index > listLength) {
                 throw new Exception("Index is out of boundary");
             }
         } catch (Exception ex) {
@@ -170,14 +195,14 @@ public class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public ImmutableList addAll(Object[] c) {
+    public ImmutableLinkedList addAll(Object[] c) {
         return new ImmutableLinkedList(head, c, listLength);
     }
 
     @Override
-    public ImmutableList addAll(int index, Object[] c) {
+    public ImmutableLinkedList addAll(int index, Object[] c) {
         try {
-            if (index >= listLength) {
+            if (index > listLength) {
                 throw new Exception("Index is out of boundary");
             }
         } catch (Exception ex) {
@@ -196,14 +221,14 @@ public class ImmutableLinkedList implements ImmutableList {
             return null;
         }
         Node tail = this.head;
-        for (int i = 0; i <= index; i++) {
+        for (int i = 0; i < index; i++) {
             tail = tail.getNext();
         }
         return tail.getData();
     }
 
     @Override
-    public ImmutableList remove(int index) {
+    public ImmutableLinkedList remove(int index) {
         try {
             if (index >= listLength) {
                 throw new Exception("Index is out of boundary");
@@ -215,7 +240,7 @@ public class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public ImmutableList set(int index, Object e) {
+    public ImmutableLinkedList set(int index, Object e) {
         try {
             if (index >= listLength) {
                 throw new Exception("Index is out of boundary");
@@ -223,14 +248,14 @@ public class ImmutableLinkedList implements ImmutableList {
         } catch (Exception ex) {
             return null;
         }
-        return remove(index).add(index);
+        return remove(index).add(index, e);
     }
 
     @Override
     public int indexOf(Object e) {
         Node tail = this.head;
-        for(int i = 0; i < this.listLength; i++){
-            if(tail.getData().equals(e)){
+        for (int i = 0; i < this.listLength; i++) {
+            if (tail.getData().equals(e)) {
                 return i;
             }
             tail = tail.getNext();
@@ -244,7 +269,7 @@ public class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public ImmutableList clear() {
+    public ImmutableLinkedList clear() {
         return new ImmutableLinkedList();
     }
 
@@ -255,9 +280,9 @@ public class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public Object[] toArray() {
-        Object [] c = new Object[this.listLength];
+        Object[] c = new Object[this.listLength];
         Node tail = this.head;
-        for(int i = 0; i < this.listLength; i++){
+        for (int i = 0; i < this.listLength; i++) {
             c[i] = tail.getData();
             tail = tail.getNext();
         }
@@ -265,14 +290,42 @@ public class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public String toString(){
-        String result = null;
+    public String toString() {
+        String result = "";
         Node tail = this.head;
-        for(int i = 0; i < this.listLength-1; i++){
-            result = tail.getData().toString() + ", ";
+        for (int i = 0; i < this.listLength - 1; i++) {
+            result += tail.getData().toString() + ", ";
             tail = tail.getNext();
         }
         result += tail.getData().toString();
-        return  result;
+        return result;
+    }
+
+    //
+    //----------------------------- additional methods  ----------------------------
+    //              reusing of main methods of addition, removing ets
+
+    public ImmutableLinkedList addFirst(Object e) {
+        return add(0, e);
+    }
+
+    public ImmutableLinkedList addLast(Object e) {
+        return add(e);
+    }
+
+    public Object getFirst() {
+        return head.getData();
+    }
+
+    public Object getLast() {
+        return get(this.listLength - 1);
+    }
+
+    public ImmutableLinkedList removeFirst() {
+        return remove(0);
+    }
+
+    public ImmutableLinkedList removeLast() {
+        return remove(this.listLength - 1);
     }
 }
