@@ -4,9 +4,9 @@
     <list default="true" id="63b4b19d-95e0-47e9-a430-95bb300b3ca2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableArrayListTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableArrayListTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java" />
     </list>
     <ignored path="cs16kovalchuk-hw2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,73 +28,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java">
+      <file leaf-file-name="ImmutableLinkedListTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="290">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
+                <element signature="method#testAdd#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testAddAll#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testAddAllByIndex#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testGet#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testRemove#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testSet#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testIndexOf#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testSize#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testClear#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testIsEmpty#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testToArray#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testToString#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testAddFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testAddLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testGetFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testGetLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testRemoveFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+                <element signature="method#testRemoveLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java">
+      <file leaf-file-name="ImmutableLinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state relative-caret-position="357">
+              <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
               <folding>
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
+                <element signature="n#!!doc;n#Node#0;n#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#addNext#0;class#Node#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="e#861#863#0" expanded="false" />
+                <element signature="method#ImmutableLinkedList#1;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="e#1320#1364#0" expanded="false" />
+                <element signature="method#ImmutableLinkedList#2;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#ImmutableLinkedList#3;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#ImmutableLinkedList#4;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#add#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#add#1;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#addAll#1;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#get#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#set#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#indexOf#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#toArray#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="method#toString#0;class#ImmutableLinkedList#0" expanded="false" />
+                <element signature="e#8507#8509#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImmutableArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java">
+      <file leaf-file-name="QueueTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-              <folding>
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="method#ImmutableArrayList#2;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="method#ImmutableArrayList#3;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="method#ImmutableArrayList#4;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="e#2311#2312#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="method#add#1;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="method#addAll#1;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="method#get#0;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="e#3515#3516#0" expanded="true" />
-                <element signature="e#3574#3575#0" expanded="true" />
-                <element signature="e#3646#3647#0" expanded="true" />
-                <element signature="e#3696#3697#0" expanded="true" />
-                <element signature="method#indexOf#0;class#ImmutableArrayList#0" expanded="false" />
-                <element signature="method#toString#0;class#ImmutableArrayList#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImmutableArrayListTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableArrayListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="227">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+              <folding>
+                <element signature="method#testGetSize#0;class#StackTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,16 +120,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableList.java" />
         <option value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" />
       </list>
     </option>
   </component>
@@ -291,59 +299,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.ImmutableArrayListTest">
-    <configuration default="false" name="ImmutableLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.immutable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cs16kovalchuk-hw2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections.immutable" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.immutable.ImmutableLinkedListTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ImmutableArrayListTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.immutable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cs16kovalchuk-hw2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections.immutable" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.immutable.ImmutableArrayListTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.QueueTest">
     <configuration default="false" name="ImmutableArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -370,19 +326,71 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ImmutableArrayListTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.immutable.*" />
+          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="cs16kovalchuk-hw2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections.immutable" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.immutable.ImmutableArrayListTest" />
-      <option name="METHOD_NAME" value="testSize" />
+      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.StackTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cs16kovalchuk-hw2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.QueueTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueueTest.testDequeue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.java.ua.edu.ucu.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cs16kovalchuk-hw2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.QueueTest" />
+      <option name="METHOD_NAME" value="testDequeue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -396,7 +404,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ImmutableArrayListTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ImmutableLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.java.ua.edu.ucu.collections.immutable.*" />
@@ -407,9 +415,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test.java.ua.edu.ucu.collections.immutable" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.immutable.ImmutableArrayListTest" />
-      <option name="METHOD_NAME" value="testSet" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ua.edu.ucu.collections.immutable.ImmutableLinkedListTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -657,19 +665,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ImmutableLinkedListTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testToString" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testSize" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testSet" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StackTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.QueueTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.QueueTest.testDequeue" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ImmutableLinkedListTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testSet" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ImmutableLinkedListTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testSize" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest.testToString" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.QueueTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ImmutableLinkedListTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ImmutableArrayListTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QueueTest.testDequeue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StackTest" />
       </list>
     </recent_temporary>
   </component>
@@ -690,35 +698,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImmutableArrayListTest - 2016.11.04 at 14h 39m 28s.xml">
+    <history-entry file="ImmutableArrayListTest - 2016.11.04 at 16h 40m 24s.xml">
       <configuration name="ImmutableArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImmutableArrayListTest - 2016.11.04 at 14h 41m 03s.xml">
-      <configuration name="ImmutableArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest - 2016.11.04 at 14h 44m 45s.xml">
-      <configuration name="ImmutableArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest_testSet - 2016.11.04 at 14h 42m 05s.xml">
-      <configuration name="ImmutableArrayListTest.testSet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest_testSet - 2016.11.04 at 14h 44m 29s.xml">
-      <configuration name="ImmutableArrayListTest.testSet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest_testSize - 2016.11.04 at 14h 37m 38s.xml">
-      <configuration name="ImmutableArrayListTest.testSize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest_testSize - 2016.11.04 at 14h 38m 21s.xml">
-      <configuration name="ImmutableArrayListTest.testSize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableArrayListTest_testSize - 2016.11.04 at 14h 39m 08s.xml">
-      <configuration name="ImmutableArrayListTest.testSize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImmutableLinkedListTest - 2016.11.04 at 14h 40m 08s.xml">
+    <history-entry file="ImmutableLinkedListTest - 2016.11.04 at 16h 40m 41s.xml">
       <configuration name="ImmutableLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImmutableLinkedListTest - 2016.11.04 at 14h 40m 38s.xml">
+    <history-entry file="ImmutableLinkedListTest - 2016.11.04 at 16h 42m 23s.xml">
       <configuration name="ImmutableLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2016.11.04 at 16h 31m 41s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2016.11.04 at 16h 42m 52s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2016.11.04 at 16h 43m 27s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2016.11.04 at 16h 43m 36s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2016.11.04 at 16h 43m 42s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_testDequeue - 2016.11.04 at 16h 36m 33s.xml">
+      <configuration name="QueueTest.testDequeue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest - 2016.11.04 at 16h 31m 14s.xml">
+      <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -733,7 +741,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.400982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.198036" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -764,7 +772,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -773,14 +795,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -815,29 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_77/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -857,93 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <element signature="method#testAdd#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testAddByIndex#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testAddAll#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testAddAllByIndex#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testGet#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testRemove#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testSet#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testIndexOf#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testSize#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testClear#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testIsEmpty#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testToArray#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testToString#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testAddFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testAddLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testGetFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testGetLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testRemoveFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
-            <element signature="method#testRemoveLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#Node#0;n#ImmutableLinkedList#0" expanded="false" />
-            <element signature="class#Node#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#addNext#0;class#Node#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="e#861#863#0" expanded="false" />
-            <element signature="method#ImmutableLinkedList#1;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="e#1320#1364#0" expanded="false" />
-            <element signature="method#ImmutableLinkedList#2;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#ImmutableLinkedList#3;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#ImmutableLinkedList#4;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#ImmutableLinkedList#5;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#copyList#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#add#1;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#addAll#1;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#get#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#remove#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#set#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#toArray#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="method#toString#0;class#ImmutableLinkedList#0" expanded="false" />
-            <element signature="e#8473#8475#0" expanded="false" />
-            <element signature="e#8827#8828#0" expanded="true" />
-            <element signature="e#8864#8865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -973,11 +881,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="14" column="6" selection-start-line="9" selection-start-column="3" selection-end-line="14" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/immutable/ImmutableLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="method#testAdd#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testAddAll#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testAddAllByIndex#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testGet#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testRemove#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testSet#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testIndexOf#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testSize#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testClear#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testIsEmpty#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testToArray#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testAddFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testAddLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testGetFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testGetLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testRemoveFirst#0;class#ImmutableLinkedListTest#0" expanded="false" />
+            <element signature="method#testRemoveLast#0;class#ImmutableLinkedListTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc;n#Node#0;n#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#addNext#0;class#Node#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="e#861#863#0" expanded="false" />
+            <element signature="method#ImmutableLinkedList#1;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="e#1320#1364#0" expanded="false" />
+            <element signature="method#ImmutableLinkedList#2;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#ImmutableLinkedList#3;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#ImmutableLinkedList#4;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#add#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#add#1;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#addAll#1;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#get#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#set#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#ImmutableLinkedList#0" expanded="false" />
+            <element signature="e#8507#8509#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/StackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding>
+            <element signature="method#testGetSize#0;class#StackTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

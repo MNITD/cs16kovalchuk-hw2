@@ -9,17 +9,21 @@ public class Stack {
         immutableLinkedList = new ImmutableLinkedList();
     }
 
-    Object peek() {
+    public Object peek() {
         return immutableLinkedList.getLast();
     }
 
-    Object pop() {
+    public Object pop() {
         Object obj = immutableLinkedList.getLast();
         immutableLinkedList = immutableLinkedList.removeLast();
         return obj;
     }
 
-    void pop(Object e) {
+    public void push(Object e) {
         immutableLinkedList = immutableLinkedList.addLast(e);
+    }
+
+    public int getSize(){
+        return immutableLinkedList.size();
     }
 }

@@ -9,17 +9,20 @@ public class Queue {
         immutableLinkedList = new ImmutableLinkedList();
     }
 
-    Object peek() {
+    public Object peek() {
         return immutableLinkedList.getFirst();
     }
 
-    Object dequeue() {
+    public Object dequeue() {
         Object obj = immutableLinkedList.getFirst();
         immutableLinkedList = immutableLinkedList.removeFirst();
         return obj;
     }
 
-    void enqueue(Object e) {
+    public void enqueue(Object e) {
         immutableLinkedList = immutableLinkedList.add(e);
+    }
+    public int getSize(){
+        return immutableLinkedList.size();
     }
 }

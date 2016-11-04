@@ -159,10 +159,11 @@ public class ImmutableLinkedList implements ImmutableList {
 
             }
         } else {
+            if(listLength != 0){
             this.head = new Node(prevListHead.getNext().getData());
             tail = this.head;
             prevListHead = prevListHead.getNext();
-            copyList(tail, prevListHead);
+            copyList(tail, prevListHead);}
         }
 
     }
